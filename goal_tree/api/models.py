@@ -5,7 +5,7 @@ from treebeard.mp_tree import MP_Node
 # Create your models here.
 
 
-class Tree(MP_Node):
+class Tree(models.Model):  # MP_Node):
     title = models.CharField(max_length=30, default='')
     description = models.TextField(default='')
     is_completed = models.BooleanField(default=False)

@@ -1,1 +1,3 @@
-web: gunicorn goal_tree.wsgi
+web: gunicorn goal_tree.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate

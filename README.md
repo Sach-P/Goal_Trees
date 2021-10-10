@@ -1,6 +1,6 @@
 # Goal_Tree
 
-This webapp will help users keep track of large goals by splitting large goals into smaller sub-goals.
+This webapp will help users keep track of large goals by splitting them into smaller sub-goals.
 
 [Link](https://goal-tree.herokuapp.com/)
 

@@ -2,7 +2,7 @@
 
 This webapp will help users keep track of large goals by splitting them into smaller sub-goals.
 
-[Link](https://goal-tree.herokuapp.com/)
+[Link to site](https://goal-tree.herokuapp.com/)
 
 ![TreeView](https://user-images.githubusercontent.com/65800016/135781014-b2947c70-27a6-4fd6-91bb-bcc33c0867af.PNG)
 

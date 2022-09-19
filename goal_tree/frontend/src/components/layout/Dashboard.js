@@ -191,7 +191,7 @@ export function Dashboard(props) {
         <Switch>
           <Redirect exact from="/home" to={`${path}/mytrees`} />
           <Route exact path={`${path}/mytrees`} component={TreeList} />
-          <Route path={`${path}/mytrees/:id`} component={TreeView} />
+          <Route path={`${path}/mytrees/:id/:title}`} component={TreeView} />
         </Switch>
       </main>
     </div >

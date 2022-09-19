@@ -83,7 +83,7 @@ export function TreeList(props) {
                             <td>{tree.title}</td>
                             <td>{tree.is_completed ? <p>Completed</p> : <p>In Progress</p>}</td>
                             <td>{tree.created_at.slice(0, 10)}</td>
-                            <td><Link to={`${url}/${tree.id}`}><button className="btn btn-success btn-sm">View</button></Link></td>
+                            <td><Link to={`${url}/${tree.id}/${tree.title}`}><button className="btn btn-success btn-sm">View</button></Link></td>
                             <td><button onClick={() => { showDeleteModal(tree.id) }} className="btn btn-danger btn-sm">{' '}Delete</button></td>
                         </tr>
                     ))}

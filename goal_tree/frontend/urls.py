@@ -6,5 +6,5 @@ urlpatterns = [
     path('login', index),
     path('register', index),
     path('home/mytrees', index),
-    path('home/mytrees/<str:treeId>', index),
+    path('home/mytrees/<str:treeId>/<str:treeTitle>', index),
 ]

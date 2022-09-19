@@ -36,9 +36,9 @@ export function bfs(
 
 
 function TreeView(props) {
-    const { id } = useParams();
+    const { id, title } = useParams();
     const [tree, setTree] = useState({
-        name: `UNDEF`,
+        name: `${title}`,
         children: [],
     });
 
@@ -51,7 +51,7 @@ function TreeView(props) {
     const close = () => setNode(undefined);
 
     useEffect(() => {
-        props.getTree(id);
+        props.getTree(id, title);
     }, []);
 
     const handleNodeClick = (datum) => {

@@ -118,9 +118,15 @@ export class Login extends Component {
                                     Forgot password?
                                 </Link>
                             </Grid>
+                            <Grid item xs>
+                                <Link to="">
+                                    Demo User
+                                    {/*this.props.login("DemoUser", "demoUser")*/}
+                                </Link>
+                            </Grid>
                             <Grid item>
                                 <Link to="/register">
-                                    {"Don't have an account? Sign Up"}
+                                    Sign Up
                                 </Link>
                             </Grid>
                         </Grid>

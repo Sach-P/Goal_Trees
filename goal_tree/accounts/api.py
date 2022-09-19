@@ -34,6 +34,7 @@ class LoginAPI(generics.GenericAPIView):
             "token": token
         })
 
+
 # Get User API
 
 

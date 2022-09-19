@@ -14,8 +14,8 @@ export const getTrees = () => (dispatch, getState) => {
 }
 
 //GET TREE
-export const getTree = (id) => (dispatch, getState) => new Promise((resolve, reject) => {
-    axios.get(`/api/trees/${id}`, tokenConfig(getState)).then((res) => {
+export const getTree = (id, title) => (dispatch, getState) => new Promise((resolve, reject) => {
+    axios.get(`/api/trees/${id}/${title}`, tokenConfig(getState)).then((res) => {
         dispatch({
             type: GET_TREE,
             payload: res.data,
